@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Jockey-One';
+    src: url('../police/JockeyOne-Regular.ttf') format('truetype'),
+}
+body {
+    font-family: 'Jockey-One', sans-serif;
+}
+
+.img-center{
+    text-align:center;
+  }
