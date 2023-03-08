@@ -1,0 +1,77 @@
+
+@font-face {
+    font-family: 'Jockey-One';
+    src: url(JockeyOne-Regular.ttf) format(‘truetype’)
+}
+body {
+    font-family: 'Jockey-One', sans-serif;
+    font-weight: bold;
+    background-color: rgb(2, 2, 2);
+}
+
+h1 {
+    text-align: center;
+}
+
+.header , .footer{
+    background-color: #0e0e0e;
+}
+
+.main{
+    background-color: #301111;
+}
+
+.logo{
+    text-align: center;
+}
+
+.codeco{
+    position: absolute;
+    top: 25px;
+    right: 15px;
+}
+
+.sponsors{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.nav1 {
+    background-color: rgb(206, 205, 205);
+    font-size: 25px;
+    padding-left:2%;
+    padding-right: 2%;
+}
+
+.nav{
+    margin-left: 35%;
+    position: relative;
+    top: 50px;
+    padding-bottom: 3%;
+}
+
+.main{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+article{
+    color: aliceblue;
+}
+p :not(.footer){
+    width: 75%;
+    margin: auto;
+}
+
+.LoLmain{
+    text-align: left;
+    margin-left: 10%;
+    width: fit-content;
+}
+
+.article3{
+    width: fit-content;
+    margin-left: 45%;
+}
