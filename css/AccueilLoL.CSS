@@ -66,6 +66,15 @@ p :not(.footer){
     width: 80%;
     margin: auto;
 }
+<<<<<<< HEAD
+
+article ,p{
+    color: rgb(144, 144, 144);
+}
+p :not(.footer){
+    width: 75%;
+    margin: auto;
+=======
   
 .network{
     margin-left: 20px;
@@ -74,6 +83,7 @@ p :not(.footer){
     font-size: large;
     display: flex;
     justify-content: space-between;
+>>>>>>> 55925b836ff6aa338833c1061e3f7cd4bb3bd5f1
 }
 
 .botlink {
