@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: 'Jockey-One';
-    src: url(JockeyOne-Regular.ttf) format(‘truetype’)
+    src: url(../police/JockeyOne-Regular.ttf) format(‘truetype’)
 }
 body {
     font-family: 'Jockey-One', sans-serif;
@@ -13,8 +13,18 @@ h1 {
     text-align: center;
 }
 
+article ,p{
+    color: rgb(144, 144, 144);
+}
+
+p :not(.footer){
+    width: 75%;
+    margin: auto;
+}
+
+
 .header , .footer{
-    background-color: #0e0e0e;
+    background-color: rgb(27, 27, 27);
 }
 
 .main{
@@ -56,22 +66,20 @@ h1 {
     width: 80%;
     margin: auto;
 }
-
-article{
-    color: aliceblue;
-}
-p :not(.footer){
-    width: 75%;
-    margin: auto;
-}
-
-.LoLmain{
-    text-align: left;
-    margin-left: 10%;
-    width: fit-content;
+  
+.network{
+    margin-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    font-size: large;
+    display: flex;
+    justify-content: space-between;
 }
 
-.article3{
-    width: fit-content;
-    margin-left: 45%;
+.botlink {
+    text-align: center;
+    padding-bottom: 10px;
+}
+.langue{
+    text-align: right;
 }
