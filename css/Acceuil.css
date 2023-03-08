@@ -4,8 +4,14 @@
 }
 body {
     font-family: 'Jockey-One', sans-serif;
+    font-weight: bold;
+    background-color: rgb(27, 27, 27);
 }
 
-.img-center{
+.img-center {
     text-align:center;
   }
+
+  article ,p {
+    color: rgb(144, 144, 144);
+}
