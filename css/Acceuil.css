@@ -6,6 +6,7 @@ body {
     font-family: 'Jockey-One', sans-serif;
     font-weight: bold;
     background-color: rgb(27, 27, 27);
+    color: rgb(144, 144, 144);
 }
 
 .img-center {
@@ -14,4 +15,91 @@ body {
 
   article ,p {
     color: rgb(144, 144, 144);
+}
+
+p :not(.footer){
+    width: 75%;
+    margin: auto;
+}
+
+.header , .footer{
+    background-color: rgb(27, 27, 27);
+}
+
+.main{
+    background-color: #301111;
+}
+
+.logo{
+    text-align: center;
+}
+
+.co{
+    position: absolute;
+    top: 25px;
+    right: 120px;
+    background-color: rgb(0, 68, 148);
+    border: none;
+    cursor: pointer;
+}
+
+.deco{
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    background-color: rgb(154, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+
+.sponsors{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.nav1 {
+    background-color: rgb(7, 7, 7);
+    font-size: 25px;
+    padding-left:2%;
+    padding-right: 2%;
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(138, 0, 0);
+    text-decoration: none;
+    }
+
+.nav{
+    position: relative;
+    top: 10px;
+    padding-bottom: 3%;
+    text-align:center;
+}
+
+.main{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+article ,p{
+    color: rgb(144, 144, 144);
+}
+p :not(.footer){
+    width: 75%;
+    margin: auto;
+}
+
+.botlink {
+    text-align: center;
+    padding-bottom: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.TextW {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.langue{
+    text-align: right;
 }
