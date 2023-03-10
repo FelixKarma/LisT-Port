@@ -1,0 +1,102 @@
+
+@font-face {
+    font-family: 'Jockey-One';
+    src: url(../police/JockeyOne-Regular.ttf) format(‘truetype’)
+}
+body {
+    font-family: 'Jockey-One', sans-serif;
+    font-weight: bold;
+    background-color: rgb(2, 2, 2);
+}
+
+h1 {
+  text-align: center;
+  color: aliceblue;
+}
+
+article ,p{
+    color: rgb(144, 144, 144);
+}
+
+p :not(.footer){
+    width: 75%;
+    margin: auto;
+}
+
+
+.header , .footer{
+    background-color: rgb(51, 48, 48);
+}
+
+.main{
+    background-color: #3b3838;
+}
+
+.logo{
+    text-align: center;
+}
+
+.codeco{
+    position: absolute;
+    top: 25px;
+    right: 15px;
+}
+
+.sponsors{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.nav1 {
+    background-color: rgb(206, 205, 205);
+    font-size: 25px;
+    padding-left:2%;
+    padding-right: 2%;
+}
+
+.nav{
+    margin-left: 35%;
+    position: relative;
+    top: 50px;
+    padding-bottom: 3%;
+}
+
+.main{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+  
+.network{
+    margin-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    font-size: large;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botlink {
+    text-align: center;
+    padding-bottom: 10px;
+}
+.langue{
+    text-align: right;
+}
+h3 , h2{
+    text-align: center;
+}
+h2{
+    color: aliceblue;
+    
+}
+h3{
+    color: blue;
+}
+.image2{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
