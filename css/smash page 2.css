@@ -111,23 +111,3 @@ normalement aucune modification est nécéssaire*/
     text-align: center;
     padding-bottom: 10px;
 }
-.logo1{
-    display: flex;
-    justify-content: center;
-}
-p{
-    text-align: center;
-}
-h2,
-h1,
-h3{
-    text-align: center;
-}
-.image2{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
-div{
-    
-}
