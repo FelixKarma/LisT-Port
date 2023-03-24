@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nom de la page</title>                   <!--Ici n'oubliez pas de changer le nom de la page-->
+    <link rel="stylesheet" href="../css/BASE.CSS">  <!--ce css contient le style pour le Header et Footer, aucun besoin d'y toucher-->
+    <link rel="stylesheet" href="../css/pageconnexion.css">                 <!--ajoutez dans les "" le chemin du css de votre page ex: ../css/nomducss.css-->
+</head>
+<body>
+
+    <!-- haut de page -->
+    <header class="header">
+
+        <div>
+            <div class="sponsors">
+                <p>
+                   Sponsors: <br>
+                </p>
+                   <img src="../images/Red-Bull-Logo-PNG-Photo.png" height="100" alt="RB">
+                   <img src="../images/Logo Hex-Script.png" alt="H-S" height="80"> <br>
+                   <img src="../images/Engine Owning.png" alt="E-O" height="80">                
+            </div>
+
+            <!--Ici serons les redirection pour le profils etc (subject to change) nous en discuterons-->
+            <div class="codeco">
+                <a href="#"><button>Connection</button></a>
+                <a href="#"><button>Deconnection</button></a>
+            </div>
+            <div  class="logo">
+                <a href="../html/Acceuil.html"><img src="../images/Logo_LisTPort.png" alt="LTP" height="200"></a>
+            </div>                                                  
+        </div>
+        
+        <!--Ici nous mettrons dans les prochains jours, les redirection vers toute les pages
+        aucune utilité pour l'instant d'y toucher, nous verrons une fois toute les pages principal terminé-->
+        <nav class="nav">   
+            <div class="jeuxlive">
+                <a class= "nav1" href="">Jeux</a>
+                <a class= "nav1" href="">Live</a>  
+            </div>
+            <div class="forumpropos">
+                <a class= "nav1" href="">Forum</a>
+                <a class= "nav1" href="">A propos</a>
+            </div>              
+        </nav>
+
+        <hr> <!--Une balise hr ici temporaire pour accentuer la séparation des élément du body-->
+
+    </header>
+
+
+
+
+
+
+
+
+
+
+   
+    <main class="main">
+
+        <section>
+
+<article>
+
+    <form method="get" action="#">
+            
+<br>
+<div class="centre">
+    <h1>Connexion</h1>
+        <label for="name">Email</label> <br/> <input type="text" placeholder="jaipasdidee@gmail.com"><br/> 
+        <br>
+        <label for="name">Mot de passe</label> <br/> <input type="text" placeholder="Mot de passe"><br/>
+        <br>
+
+        <div>
+            <a href="#"><button>Connexion</button></a> 
+            <a href="#" target="_blank"></a>
+        </div>
+ <br>
+
+
+</form>
+
+
+</section>
+
+<section>
+
+
+
+    <form method="get" action="#">
+            
+        <br>
+        <div class="centre">
+           
+            <h1>Inscription</h1>
+            <h6>* champs obligatoires</h6>
+                <label for="name">Nom d'utilisateur :*</label> <br/> <input type="text" placeholder="Jean-Kevin" required><br/> 
+                <label for="name">Email :*</label> <br/> <input type="text" placeholder="jaipasdidee@gmail.com" required><br/>
+                <label for="name">Mot de passe :*</label> <br/> <input type="text" placeholder="Mot de passe" required><br/>
+                <label for="name">Confirmer le mot de passe :*</label> <br/> <input type="text" placeholder="Mot de passe" required><br/>
+                <label for="name">Téléphone portable :</label> <br/> <input type="text" placeholder="0601020304"><br/>
+                <label for="Date de naissance">Date de naissance :</label> <br/> <input type="date" placeholder="jj/mm/aaaa"> <br/>
+            </select>
+                <br>
+                <label for="Genre">Genre :<br> <input type="radio">Femme</label>
+            <input type="radio">Homme<br><br>
+
+            <input type="checkbox" name="cgu" value="text" id="text" required>J'ai lu et j'accepte les conditions générales d'utilisation.*</label> <br>
+            <input type="checkbox" name="newsletter" value="text" id="text">S'inscrire à la newsletter</label>
+        
+                <div>
+                    <a href="#"><button>Inscription</button></a> 
+                    <a href="#" target="_blank"></a>
+                </div>
+         <br>
+        
+    
+        
+        </form>
+   
+
+
+</article>
+</section>
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <!-- bas de page -->
+    <footer class="footer">
+
+        <hr><!--Une balise hr ici temporaire pour accentuer la séparation des élément du body-->
+
+        <div class="network">
+            <div>
+                <p>Nous suivre:</p>
+                <img src="../images/Facebook.png" alt="FB" height="50">
+                <img src="../images/Insta.png" alt="Insta" height="50">
+                <img src="../images/Twitter.png" alt="Twit" height="50">
+            </div>
+            <div class="langue">
+                <img src="../images/Terre.png" alt="Eng" height="50">
+                <a href="">Français</a> <span>--</span> <a href="">English</a> 
+            </div>
+        </div>
+
+        <div class="botlink">
+            <a href="">Contact</a> <span>--</span> 
+            <a href="">CGU</a> <span>--</span> 
+            <a href="">Newsletter</a>
+        </div>
+
+    </footer>
+    
+</body>
+</html>
