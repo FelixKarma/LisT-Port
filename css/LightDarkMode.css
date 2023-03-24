@@ -1,5 +1,19 @@
+:root{
+  --bgColorSlider: #0e0e0e;
+  --borderSlider: #000000;
+  --bgSliderBefore: #e8e8e8;
+  --colorIcon: #880000;
+  --bgColorBtn: #0e0e0e;
+  --borderBtn: #000000;
+  --boxShadow: #183153;
+}
+
+.opacite{
+  opacity: 50%;
+}
+
 #placement {
-  margin-top: 2.1%;
+  margin-top: 10px;
   margin-right: 11px
 }
 
@@ -24,8 +38,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #0e0e0e;
-    border: 1px solid #000000;
+    background-color: var(--bgColorSlider);
+    border: 1px solid var(--borderSlider);
     transition: .4s;
     border-radius: 30px;
   }
@@ -39,7 +53,7 @@
     left: 2px;
     bottom: 3px;
     z-index: 2;
-    background-color: #e8e8e8;
+    background-color: var(--bgSliderBefore);
     transition: .4s;
   }
   
@@ -53,7 +67,7 @@
   }
   
   .moon svg {
-    fill: #880000;
+    fill: var(--colorIcon);
     position: absolute;
     top: 5px;
     left: 5px;
@@ -101,12 +115,12 @@
   }
   
   .input:checked + .slider {
-    background-color: #0e0e0e;
-    border: 1px solid #000000;
+    background-color: var(--bgColorBtn);
+    border: 1px solid var(--borderBtn);
   }
   
   .input:focus + .slider {
-    box-shadow: 0 0 1px #183153;
+    box-shadow: 0 0 1px var(--boxShadow);
   }
   
   .input:checked + .slider:before {
