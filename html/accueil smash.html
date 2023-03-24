@@ -1,63 +1,78 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="Content-Type" content="text/html" ; charset="UFT-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="../css/accueil smash.CSS"
-      media="screen,projection"
-    />
-   </head>
-   <body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nom de la page</title>                   <!--Ici n'oubliez pas de changer le nom de la page-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> <!-- Ce css contient BootStrap -->
+    <link rel="stylesheet" href="">                 <!--ajoutez dans les "" le chemin du css de votre page ex: ../css/nomducss.css-->
+    <link rel="stylesheet" href="../css/BASE.CSS">  <!--ce css contient le style pour le Header et Footer, aucun besoin d'y toucher-->
+    <link rel="stylesheet" href="../css/LightDarkMode.css"> <!--Ce css contient le Bouton Light/Dark Mode-->
+    <link rel="stylesheet" href="../css/accueil smash.CSS">
+    <link rel="stylesheet" href="../html/Live.html">
+
+</head>
+<body>
 
     <!-- haut de page -->
     <header class="header">
+        
+        <div>
+          
+            <div class="sponsors">
+                <p class="text-deco">Sponsors : <br></p>
 
-      <div>
-          <div class="sponsors">
-              <p>
-                 Sponsors: <br>
-              </p>
-                 <img src="../images/Red-Bull-Logo-PNG-Photo.png" height="100" alt="RB">
-                 <img src="../images/Logo Hex-Script.png" alt="H-S" height="80"> <br>
-                 <img src="../images/Engine Owning.png" alt="E-O" height="80">                
-          </div>
+                <div class="sponsorplace">
+                    <div>
+                        <a href="https://www.redbull.com/fr-fr/"><img src="../images/Red-Bull-Logo-PNG-Photo.png" height="150" alt="RB"></a>
+                    </div>
 
-          <!--Ici serons les redirection pour le profils etc (subject to change) nous en discuterons-->
-          <div class="codeco">
-              <a href="#"><button>Connection</button></a>
-              <a href="#"><button>Deconnection</button></a>
-          </div>
-          <div  class="logo">
-              <a href="../html/Acceuil.html"><img src="../images/Logo_LisTPort.png" alt="LTP" height="200"></a>
-          </div>                                                  
-      </div>
-      
-      <!--Ici nous mettrons dans les prochains jours, les redirection vers toute les pages
-      aucune utilité pour l'instant d'y toucher, nous verrons une fois toute les pages principal terminé-->
-      <nav class="nav">   
-          <div class="jeuxlive">
-              <a class= "nav1" href="">Jeux</a>
-              <a class= "nav1" href="">Live</a>  
-          </div>
-          <div class="forumpropos">
-              <a class= "nav1" href="">Forum</a>
-              <a class= "nav1" href="">A propos</a>
-          </div>              
-      </nav>
+                    <div>
+                        <a href="https://hexlol-script.com/"><img src="../images/Logo Hex-Script.png" alt="H-S" height="75"> <br></a>
+                        <a href="https://www.engineowning.to/shop/"><img src="../images/Engine Owning.png" alt="E-O" height="80"></a>
+                    </div>
+                </div>                
+            </div>
 
-      <hr> <!--Une balise hr ici temporaire pour accentuer la séparation des élément du body-->
+            <!--Ici serons les redirection pour le profils etc (subject to change) nous en discuterons-->
+            <div class="codeco">
+                <label class="switch" id="placement">
+                    <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#880000"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"></path></g></svg></span>
+                    <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>   
+                    <input type="checkbox" checked class="input">
+                    <span class="slider"></span>
+                  </label>
+                <a href="../html/Connexion.html"><button id="co">Connexion</button></a>
+            </div>            
+                                                          
+        </div>
+        
+        <!--Ici nous mettrons dans les prochains jours, les redirection vers toute les pages
+        aucune utilité pour l'instant d'y toucher, nous verrons une fois toute les pages principal terminé-->
+        <nav class="nav">   
+            <div class="jeuxlive">
+                <a href=""><button class= "nav1">Jeux</button></a>
+                <a href="../html/Live.html"><button class= "nav1">Live</button></a>
+            </div>
 
-  </header>
+            <div  class="logo">
+                <a href="../html/Acceuil.html"><img id="logo-marg" src="../images/Logo_LisTPort.png" alt="LTP" height="250"></a>
+            </div>
+
+            <div class="forumpropos">
+                <a href="../html/Forum.html"><button class= "nav1">Forum</button></a>
+                <a href="../html/Apropos.html"><button class= "nav1">A propos</button></a>
+            </div>              
+        </nav>
+    </header>
+
     <main>
        <div class="logo1">
          <img src="../image,logo/new logo smash bros.png" alt="logog smash" width="500">
        </div>
        
-        <img src="../images/Logo Smash Blanc.png" alt="petit logo smash" width="50">
+         <h1> <img src="../images/Logo Smash Blanc.png" alt="petit logo smash" width="50"><p>smash bros, résume</p></h1>
         <p class="gaf">super smash bros est un jeu de combat et plate-formes édited par Nintendo et dévelloppé<br>
         par HAL Laboratory,Sora ltd et Bandai Namico Games. Ce jeu met en scène des combats avec des perssonnages de l'univers<br>
         de nintendo</p>
@@ -66,6 +81,7 @@
           mais vous avez un compteur de dégàt,plus vous avez de dégàt,plus vous risquer d'être éjecté de l'écran.</p>
         <div class="image2">
          <img src="../image,logo/test-super-smash-bros-ultimate-meilleure-facon-de-feter-les-20-ans-11.jpg" alt="" width="500">
+         <img src="../image,logo/tous-personnages-smash-bros.png" alt="" width="500">
          
         </div>
           
@@ -73,7 +89,7 @@
           <img src="../image,logo/tous-personnages-smash-bros.png" alt="" width="500">
         </div>
 
-<body>
+
         <div>
           <img src="../images/Logo Smash Blanc.png" alt="" width="50">
         </div>
@@ -93,49 +109,78 @@
           shonen war #2, le 8 avril  , Paris
         </p>
 
+        </div>
+        <div>
+          
+        </div>
+        
+        <h1> <img src="../images/Logo Smash Blanc.png" alt="petit logo smash" width="50" class=""><p>Petit tournois de france</p></h1>
+        
+          <p>Gamers Garden #10,  4 mars , 60100 Creil <img src="../image,logo/gg gamers 10#.png" > <br>
+           <br>
+           les 2 savoies, 4 et 5 mars , 73000 Chambéry <br>
+           <br>
+           neo smash 2.3, 11 mars 84310 
+           Morière-Les-Avignon <br>
+           <br>
+           omniSmash #8, 12 mars 45100 Orléans <br>
+           <br>
+           omniSmash #8, le 8 avril  , Paris
+          </p>
+      <div class="img3">
+             <img src="../image,logo/les deux savoir.jpg" alt="les deux savoir" width="100">
+             <img src="../image,logo/neo smash.jpg" alt=" bannière neo smash" width="100"> 
+             <img src="../image,logo/smash arc.png" width="100">
+      </div>
+        
+        
         <h2>tournois à venir/passé</h2>
         <h3>mini actus</h3>
-         <p>
-          Le dernier  gros évennement  est l’event genesis 9 qui s’est déroulé San Jose aux Etat-Unis, le gagant de smash bros
-          est  Mkleo (léo) <br>
-          <br>
-         Le prochain tournoi qui se déroule au Japon est  le  4 mars à Tokyo ... <br>
+          <p class=>
+           Le dernier  gros évennement  est l’event genesis 9 qui s’est déroulé San Jose aux Etat-Unis, le gagant de smash bros
+           est  Mkleo (léo). <br>
+           
+           Le prochain tournoi qui se déroule au Japon est  le  4 mars à Tokyo. <br>
+           
+           <br>
+            La team Regen organise un event au mois d’avril, qui se déroulera à Birmingham en Angleterre .... 
+            <div class="page2">
+           <a href="../html/smash page 2.html">page 2</a> 
+            </div>
+          </p>
          <br>
-          La team Regen organise un event au mois d’avril, qui se déroulera à Birmingham en Angleterre .... <br>
          <br>
-       ......
-         </p>
-      
+         <br>
+         <br>
+         <br>
+    
        
     </main>
-
-
-    <footer>
- <!-- bas de page -->
     <footer class="footer">
-      <hr><!--Une balise hr ici temporaire pour accentuer la séparation des élément du body-->
-
       <div class="network">
           <div>
-              <p>Nous suivre:</p>
-              <img src="../images/Facebook.png" alt="FB" height="50">
-              <img src="../images/Insta.png" alt="Insta" height="50">
-              <img src="../images/Twitter.png" alt="Twit" height="50">
+              <p class="text-deco">Nous suivre:</p>
+              <a href="https://www.facebook.com/"><img src="../images/Facebook.png" alt="FB" height="50"></a>
+              <a href="https://www.instagram.com/"><img src="../images/Insta.png" alt="FB" height="50"></a>
+              <a href="https://twitter.com/"><img src="../images/Twitter.png" alt="FB" height="50"></a>
           </div>
           <div class="langue">
               <img src="../images/Terre.png" alt="Eng" height="50">
-              <a href="">Français</a> <span>--</span> <a href="">English</a> 
+              <a href="" class="text-deco">Français</a> <span>--</span> 
+              <a href="" class="text-deco">English</a> 
           </div>
       </div>
-
+  
       <div class="botlink">
-          <a href="">Contact</a> <span>--</span> 
-          <a href="">CGU</a> <span>--</span> 
-          <a href="">Newsletter</a>
+          <a href="../html/Contact.html" class="text-deco">Contact</a> <span>--</span> 
+          <a href="../html/CGU.html" class="text-deco">CGU</a> <span>--</span> 
+          <a href="../html/Profil.html" class="text-deco">Newsletter</a>
       </div>
-
+  
   </footer>
-
-    </footer>
-    
-</body>
+      
+  <script src="../js/LightDarkMode.js"></script> <!--Ce js contient la fonction Light/Dark Mode-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> <!--Ce js contient BootStrap-->
+  
+  </body>
+  </html>

@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Live</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/Live.css">
-    <link rel="stylesheet" href="../css/BASE.CSS">
+    <title>ActuWORLD</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/AccueilLoL.CSS">
+    <link rel="stylesheet" href="../css/BASE.CSS"> 
     <link rel="stylesheet" href="../css/LightDarkMode.css">
-    
-    
 </head>
-
 <body>
 
     <header class="header">
@@ -38,6 +33,7 @@
                 </div>
             </div>
 
+            <!--Ici serons les redirection pour le profils etc (subject to change) nous en discuterons-->
             <div class="codeco">
                 <label class="switch" id="placement">
                     <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -61,10 +57,12 @@
 
         </div>
 
+        <!--Ici nous mettrons dans les prochains jours, les redirection vers toute les pages
+        aucune utilité pour l'instant d'y toucher, nous verrons une fois toute les pages principal terminé-->
         <nav class="nav">
             <div class="jeuxlive">
                 <li>
-                    <a href="#"><button class="nav1">Jeux</button></a>
+                    <a href=""><button class="nav1">Jeux</button></a>
                     <div class="deroulant">
                         <ul class="contenu">
                             <a href="../html/accueilapex.html"><button class="contenuOption">Apex Legends</button></a>
@@ -91,100 +89,37 @@
 
     </header>
 
+    <main class="main">
+        <nav class="navLoL">
+            <a class="actuligue" href="../html/ActuEtHistoLoL.html">L'Actualité et L'Historique</a>
+            <a href="../html/AccueilLoL.html"><img src="../images/League-of-Legends-Logo.png" alt="Lol" height="300"></a>
+            <a class="actuligue" href="../html/LigueEtPlan.html">Ligues et Planing</a>
+        </nav>
 
-<main>
-      <div class="image">
-        <img src="../images/League-of-Legends-Logo.png" alt="logo lol" width="700px">
-          <video width="640" height="360" controls class="margin">
-            <source src="https://www.youtube.com/watch?v=g6iVgaziOBA" type="video/mp4">
-            <source src="https://www.youtube.com/watch?v=g6iVgaziOBA" type="video/webm">
-            <source src="https://www.youtube.com/watch?v=g6iVgaziOBA" type="video/ogg">
-          </video>
+        <div class="CentrerB">
+            <div class="menuG">
+                <br><br><br>
+                <p><a href="../html/ActuEtHistoLoL.html">L'actu Esport</a></p><br><br>
+                <p><a href="../html/ActuLoLMSI.html">MSI 2023</a></p><br><br>
+                <p><a href="../html/ActuLoLWORLD.html">Worlds 2023</a></p><br><br>
+                <p><a href="../html/ActuLoLHisto.html">Les gagnats: Worlds et MSI</a></p>
+            </div>
+            <div class="imgD">
+                <h3>LES WORLDS 2023</h3>
+                <img src="../images/large_W23_730e881b58.png" alt="world" height="300">
+                <h1 class="triste"> : ( </h1>
+                <p class="texteD">Oups il semblerai que la page
+                    que vous essayez de consulter
+                    n’existe pas ou n’est pas trouvable
+                    
+                    Nous ne possedons aucune infos 
+                    pour le moment</p> <br><br><br><br><br><br><br>
+            </div>
+        </div>
 
-      </div>
-      <div class="image" >
-        <img src="../images/Logo Apex.png" alt="logo apex" width="500px" class="fi">
-        <div id="countdown" class="if"></div>
-        <script>
-            function countdown() {
-                var countdownDate = localStorage.getItem("countdownDate");
-    
-                if (!countdownDate) {
-                    countdownDate = new Date("2023-04-01T23:59:59").getTime();
-                    localStorage.setItem("countdownDate", countdownDate);
-                } else {
-                    countdownDate = parseInt(countdownDate);
-                }
-    
-                var now = new Date().getTime();
-                var distance = countdownDate - now;
-    
-                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-                document.getElementById("countdown").innerHTML = days + "j " + hours + "h " + minutes + "m " + seconds + "s ";
-    
-                if (distance < 0) {
-                    clearInterval(x);
-                    document.getElementById("countdown").innerHTML = "Terminé";
-                    // Réinitialiser la date de fin du compte à rebours à la date actuelle plus 1 minute
-                    countdownDate = new Date().getTime() + (1 * 60 * 1000);
-                    localStorage.setItem("countdownDate", countdownDate);
-                }
-            }
-    
-            var x = setInterval(countdown, 1000);
-        </script>
-    
-     
-     </div>
-     <div class="image">
+               
+    </main>
         
-        <img src="../image,logo/new logo smash bros.png" alt="logo" width="600px" class="image 2" class="fog">
-        <div id="countdown2" class="gaf"></div>
-        <script>
-
-        function countdown2() {
-          var countdownDate = localStorage.getItem("countdownDate2");
-          if (!countdownDate) {
-             countdownDate = new Date("2023-05-01T23:59:59").getTime();
-             localStorage.setItem("countdownDate2", countdownDate);
-          } else {
-             countdownDate = parseInt(countdownDate);
-          }
-           var now = new Date().getTime();
-           var distance = countdownDate - now;
-           var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-           var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-           var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-           var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            document.getElementById("countdown2").innerHTML = days + "j " + hours + "h " + minutes + "m " + seconds + "s ";
-          if (distance < 0) {
-            clearInterval(x2);
-            document.getElementById("countdown2").innerHTML = "Terminé";
-            countdownDate = new Date().getTime() + (1 * 60 * 1000);
-            localStorage.setItem("countdownDate2", countdownDate);
-        }
-      }
-
-     var x2 = setInterval(countdown2, 1000);
-
-    
-            
-        </script> 
-      
-     </div>
-</main>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
     <footer class="footer">
 
         <div class="network">
@@ -209,13 +144,13 @@
 
     </footer>
 
-    <script src="../js/LightDarkMode.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="../js/NavBar.js"></script>
+    <script src="../js/LightDarkMode.js"></script> <!--Ce js contient la fonction Light/Dark Mode-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> <!-- JS JQUERY -->
+    <script src="../js/NavBar.js"></script> <!-- JS NAVBAR -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> <!--Ce js contient BootStrap-->
 
+    
 </body>
-
 </html>
