@@ -304,16 +304,6 @@ normalement aucune modification est nécéssaire*/
     text-align: center;
     padding-bottom: 10px;
 }
-
-.langue {
-    margin-right: 2%;
-    margin-top: 2%;
-}
-
-.botlink {
-    text-align: center;
-    padding-bottom: 10px;
-}
 .intro{
     display: flex;
     justify-content: center;
