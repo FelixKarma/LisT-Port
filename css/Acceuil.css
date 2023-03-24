@@ -1,17 +1,31 @@
-@font-face {
-    font-family: 'Jockey-One';
-    src: url('../police/JockeyOne-Regular.ttf') format('truetype'),
-}
-body {
-    font-family: 'Jockey-One', sans-serif;
-    font-weight: bold;
-    background-color: rgb(27, 27, 27);
+#Titre {
+    font-size: 200%;
+    margin-left: 10px;
 }
 
-.img-center {
-    text-align:center;
-  }
+#Carousel{
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 0;
+}
 
-  article ,p {
-    color: rgb(144, 144, 144);
+#ControlCarousel{
+    opacity: 0;
+}
+
+.SizeCarousel{
+    height: 550px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.DisplayLogo{
+    display: flex;
+    flex-direction: column;
+}
+
+.DisplayBloc{
+    display: flex;
+    justify-content: space-around;
+    align-items: center ;
 }
