@@ -66,6 +66,7 @@ switchTheme.addEventListener('click', () => {
 
         localStorage.removeItem("dark-mode");
         localStorage.setItem("dark-mode", "enabled");
+        switchTheme.removeAttribute("../images/Logo Apex Noir.png");
 
     } else {
         // Light Mode
@@ -125,6 +126,7 @@ switchTheme.addEventListener('click', () => {
 
         localStorage.removeItem("dark-mode");
         localStorage.setItem("dark-mode", "disable");
+        switchTheme.setAttribute("../images/Logo Apex Blanc.png", "../images/Logo Apex Noir.png");
     }
 })
 
@@ -184,7 +186,9 @@ if (lightMode == "enabled") {
 
     // Switch Theme
 
-    switchTheme.setAttribute("checked", "true")
+    switchTheme.setAttribute("checked", "true");
+    switchTheme.removeAttribute("../images/Logo Apex Noir.png");
+    switchTheme.setAttribute("../images/Logo Apex Blanc.png", "../images/Logo Apex Noir.png");
 
 } else {
     // Light Mode
@@ -242,5 +246,6 @@ if (lightMode == "enabled") {
 
     // Switch Theme
 
-    switchTheme.removeAttribute("checked")
+    switchTheme.removeAttribute("checked");
+    switchTheme.setAttribute("../images/Logo Apex Blanc.png", "../images/Logo Apex Noir.png");
 }
