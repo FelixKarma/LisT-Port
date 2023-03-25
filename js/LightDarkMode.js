@@ -1,6 +1,14 @@
+let LogoApex = document.getElementById('LogoApex');
+let LogoLol = document.getElementById('LogoLol');
+let LogoSmash = document.getElementById('LogoSmash');
+
+let srcApex = LogoApex.getAttribute('src');
+let srcLol = LogoLol.getAttribute('src');
+let srcSmash = LogoSmash.getAttribute('src');
+
 const sliderOpacity = document.querySelector(".slider");
 
-const switchTheme = document.querySelector('.input')
+const switchTheme = document.querySelector('.input');
 
 let lightMode = localStorage.getItem("dark-mode");
 
@@ -15,6 +23,7 @@ switchTheme.addEventListener('click', () => {
 
         document.documentElement.style.setProperty('--ecriture', '#909090');
         document.documentElement.style.setProperty('--background', 'repeating-linear-gradient(322deg, rgb(0,0,0) 0px, rgb(0,0,0) 25px,transparent 25px, transparent 28px),repeating-linear-gradient(382deg, rgb(0,0,0) 0px, rgb(0,0,0) 25px,transparent 25px, transparent 28px),repeating-linear-gradient(61deg, rgb(0,0,0) 0px, rgb(0,0,0) 25px,transparent 25px, transparent 28px),linear-gradient(135deg, rgb(255,0,0),rgb(255,69,0))');
+        document.documentElement.style.setProperty('--ColorHr', '#ffffff');
 
         /* Header + Footer */
 
@@ -66,7 +75,13 @@ switchTheme.addEventListener('click', () => {
 
         localStorage.removeItem("dark-mode");
         localStorage.setItem("dark-mode", "enabled");
-        switchTheme.removeAttribute("../images/Logo Apex Noir.png");
+        LogoApex.removeAttribute('src');
+        LogoLol.removeAttribute('src');
+        LogoSmash.removeAttribute('src');
+        LogoApex.setAttribute('src', '../images/Logo Apex Blanc.png');
+        LogoLol.setAttribute('src', '../images/Logo LOL Blanc.png');
+        LogoSmash.setAttribute('src', '../images/Logo Smash Blanc.png');
+
 
     } else {
         // Light Mode
@@ -75,6 +90,7 @@ switchTheme.addEventListener('click', () => {
 
         document.documentElement.style.setProperty('--ecriture', '#000000');
         document.documentElement.style.setProperty('--background', 'repeating-linear-gradient(105deg, transparent 0px, transparent 3px,rgb(255,255,255) 3px, rgb(255,255,255) 28px),repeating-linear-gradient(333deg, transparent 0px, transparent 3px,rgb(255,255,255) 3px, rgb(255,255,255) 28px),linear-gradient(90deg, hsl(300,76%,69%),hsl(351.429,76%,69%),hsl(42.857,76%,69%),hsl(94.286,76%,69%),hsl(145.714,76%,69%),hsl(197.143,76%,69%),rgb(236,116,116))');
+        document.documentElement.style.setProperty('--ColorHr', '#000000');
 
         /* Header + Footer */
 
@@ -125,8 +141,14 @@ switchTheme.addEventListener('click', () => {
         // Local storage
 
         localStorage.removeItem("dark-mode");
+
         localStorage.setItem("dark-mode", "disable");
-        switchTheme.setAttribute("../images/Logo Apex Blanc.png", "../images/Logo Apex Noir.png");
+        LogoApex.removeAttribute('src');
+        LogoLol.removeAttribute('src');
+        LogoSmash.removeAttribute('src');
+        LogoApex.setAttribute('src', '../images/Logo Apex Noir.png');
+        LogoLol.setAttribute('src', '../images/Logo LOL Noir.png');
+        LogoSmash.setAttribute('src', '../images/Logo Smash Noir.png');
     }
 })
 
@@ -137,6 +159,7 @@ if (lightMode == "enabled") {
 
     document.documentElement.style.setProperty('--ecriture', '#909090');
     document.documentElement.style.setProperty('--background', 'repeating-linear-gradient(322deg, rgb(0,0,0) 0px, rgb(0,0,0) 25px,transparent 25px, transparent 28px),repeating-linear-gradient(382deg, rgb(0,0,0) 0px, rgb(0,0,0) 25px,transparent 25px, transparent 28px),repeating-linear-gradient(61deg, rgb(0,0,0) 0px, rgb(0,0,0) 25px,transparent 25px, transparent 28px),linear-gradient(135deg, rgb(255,0,0),rgb(255,69,0))');
+    document.documentElement.style.setProperty('--ColorHr', '#ffffff');
 
     /* Header + Footer */
 
@@ -187,8 +210,12 @@ if (lightMode == "enabled") {
     // Switch Theme
 
     switchTheme.setAttribute("checked", "true");
-    switchTheme.removeAttribute("../images/Logo Apex Noir.png");
-    switchTheme.setAttribute("../images/Logo Apex Blanc.png", "../images/Logo Apex Noir.png");
+    LogoApex.removeAttribute('src');
+    LogoLol.removeAttribute('src');
+    LogoSmash.removeAttribute('src');
+    LogoApex.setAttribute('src', '../images/Logo Apex Blanc.png');
+    LogoLol.setAttribute('src', '../images/Logo LOL Blanc.png');
+    LogoSmash.setAttribute('src', '../images/Logo Smash Blanc.png')
 
 } else {
     // Light Mode
@@ -197,6 +224,7 @@ if (lightMode == "enabled") {
 
     document.documentElement.style.setProperty('--ecriture', '#000000');
     document.documentElement.style.setProperty('--background', 'repeating-linear-gradient(105deg, transparent 0px, transparent 3px,rgb(255,255,255) 3px, rgb(255,255,255) 28px),repeating-linear-gradient(333deg, transparent 0px, transparent 3px,rgb(255,255,255) 3px, rgb(255,255,255) 28px),linear-gradient(90deg, hsl(300,76%,69%),hsl(351.429,76%,69%),hsl(42.857,76%,69%),hsl(94.286,76%,69%),hsl(145.714,76%,69%),hsl(197.143,76%,69%),rgb(236,116,116))');
+    document.documentElement.style.setProperty('--ColorHr', '#000000');
 
     /* Header + Footer */
 
@@ -247,5 +275,10 @@ if (lightMode == "enabled") {
     // Switch Theme
 
     switchTheme.removeAttribute("checked");
-    switchTheme.setAttribute("../images/Logo Apex Blanc.png", "../images/Logo Apex Noir.png");
+    LogoApex.removeAttribute('src');
+    LogoLol.removeAttribute('src');
+    LogoSmash.removeAttribute('src');
+    LogoApex.setAttribute('src', '../images/Logo Apex Noir.png');
+    LogoLol.setAttribute('src', '../images/Logo LOL Noir.png');
+    LogoSmash.setAttribute('src', '../images/Logo Smash Noir.png');
 }
