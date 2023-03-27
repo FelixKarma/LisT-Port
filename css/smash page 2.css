@@ -15,7 +15,22 @@ h1{
     justify-content: center;
 }
 
-.ab{
+.bolo {
+    display: flex;
+    justify-content: center;
+}
+
+.mario {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.ab {
     display: flex;
     justify-content: flex-start;
 }
