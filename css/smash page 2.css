@@ -1,4 +1,16 @@
-.intro {
+.intro{
+    display: flex;
+    justify-content: center;
+}
+.bolo{
+    display: flex;
+    justify-content: center;
+}
+.mario{
+    display: flex;
+    justify-content: center;
+}
+h1{
     display: flex;
     justify-content: center;
 }
