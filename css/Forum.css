@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    background-color: black;
+    background-image: url(../image,logo/font_forum.png);
+    background-repeat: no-repeat;
+    background-position: 50% ;
+    background-attachment: fixed;
+}
+
+.card-header{
+    background-color: #84cff6;
+}
+
+.firstLetterInCapital:first-letter {
+    text-transform: uppercase;
+}

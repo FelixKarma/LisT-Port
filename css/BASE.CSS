@@ -70,6 +70,10 @@ body {
     margin: 0px;
 }
 
+main{
+    margin-bottom: 200px;
+}
+
 /*Partie commune footer et header*/
 
 * :not(button, .nav1) {
