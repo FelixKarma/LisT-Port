@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="../css/Live.css">
     <link rel="stylesheet" href="../css/BASE.CSS">
     <link rel="stylesheet" href="../css/LightDarkMode.css">
-    
-    
+
+
 </head>
 
 <body>
@@ -67,10 +67,14 @@
                     <a href="#"><button class="nav1">Jeux</button></a>
                     <div class="deroulant">
                         <ul class="contenu">
-                            <a href="../html/accueilapex.html"><button class="contenuOption">Apex Legends</button></a>
-                            <a href="../html/AccueilLoL.html"><button class="contenuOption">League Of
+                            <a href="../html/accueilapex.html"><button class="contenuOption"><img id="LogoApex" alt=""
+                                        height="30px">Apex
                                     Legends</button></a>
-                            <a href="../html/accueil smash.html"><button class="contenuOption">Smash Bros
+                            <a href="../html/AccueilLoL.html"><button class="contenuOption"><img id="LogoLol" alt=""
+                                        height="30px">League Of
+                                    Legends</button></a>
+                            <a href="../html/accueil smash.html"><button class="contenuOption"><img id="LogoSmash"
+                                        alt="" height="30px">Smash Bros
                                     Ultimate</button></a>
                         </ul>
                     </div>
@@ -92,98 +96,50 @@
     </header>
 
 
-<main>
-      <div class="image">
-        <img src="../images/League-of-Legends-Logo.png" alt="logo lol" width="700px">
-          <video width="640" height="360" controls class="margin">
-            <source src="https://www.youtube.com/watch?v=g6iVgaziOBA" type="video/mp4">
-            <source src="https://www.youtube.com/watch?v=g6iVgaziOBA" type="video/webm">
-            <source src="https://www.youtube.com/watch?v=g6iVgaziOBA" type="video/ogg">
-          </video>
+    <main class="mainLive">
 
-      </div>
-      <div class="image" >
-        <img src="../images/Logo Apex.png" alt="logo apex" width="500px" class="fi">
-        <div id="countdown" class="if"></div>
-        <script>
-            function countdown() {
-                var countdownDate = localStorage.getItem("countdownDate");
-    
-                if (!countdownDate) {
-                    countdownDate = new Date("2023-04-01T23:59:59").getTime();
-                    localStorage.setItem("countdownDate", countdownDate);
-                } else {
-                    countdownDate = parseInt(countdownDate);
-                }
-    
-                var now = new Date().getTime();
-                var distance = countdownDate - now;
-    
-                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-                document.getElementById("countdown").innerHTML = days + "j " + hours + "h " + minutes + "m " + seconds + "s ";
-    
-                if (distance < 0) {
-                    clearInterval(x);
-                    document.getElementById("countdown").innerHTML = "Terminé";
-                    // Réinitialiser la date de fin du compte à rebours à la date actuelle plus 1 minute
-                    countdownDate = new Date().getTime() + (1 * 60 * 1000);
-                    localStorage.setItem("countdownDate", countdownDate);
-                }
-            }
-    
-            var x = setInterval(countdown, 1000);
-        </script>
-    
-     
-     </div>
-     <div class="image">
-        
-        <img src="../image,logo/new logo smash bros.png" alt="logo" width="600px" class="image 2" class="fog">
-        <div id="countdown2" class="gaf"></div>
-        <script>
+        <div>
 
-        function countdown2() {
-          var countdownDate = localStorage.getItem("countdownDate2");
-          if (!countdownDate) {
-             countdownDate = new Date("2023-05-01T23:59:59").getTime();
-             localStorage.setItem("countdownDate2", countdownDate);
-          } else {
-             countdownDate = parseInt(countdownDate);
-          }
-           var now = new Date().getTime();
-           var distance = countdownDate - now;
-           var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-           var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-           var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-           var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            document.getElementById("countdown2").innerHTML = days + "j " + hours + "h " + minutes + "m " + seconds + "s ";
-          if (distance < 0) {
-            clearInterval(x2);
-            document.getElementById("countdown2").innerHTML = "Terminé";
-            countdownDate = new Date().getTime() + (1 * 60 * 1000);
-            localStorage.setItem("countdownDate2", countdownDate);
-        }
-      }
+            <div class="ModuleLol Module">
 
-     var x2 = setInterval(countdown2, 1000);
+                <img id="LogoLiveLol" src="../images/League-of-Legends-Logo.png" alt="logo lol">
 
-    
-            
-        </script> 
-      
-     </div>
-</main>
+                <iframe width="800" height="450" src="https://www.youtube.com/embed/9veR3bEsdLI"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+            </div>
+
+            <br>
+
+            <div class="ModuleApex Module">
+
+                <div id="LogoLiveApex">
+
+                    <img src="../images/Logo Apex.png" alt="logo apex" width="800px" class="fi">
+
+                    <div id="countdown" class="if CompteurApex"></div>
+
+                </div>
+            </div>
+
+            <br>
+
+            <div class="ModuleSmash Module">
+
+                <div id="LogoLiveSmash">
+
+                    <img src="../image,logo/new logo smash bros.png" alt="logo" width="800px" class="image 2"
+                        class="fog">
+
+                    <div id="countdown2" class="gaf CompteurSmash"></div>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
 
     <footer class="footer">
 
@@ -215,6 +171,73 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+
+    <!-- Compteur Apex -->
+    <script>
+        function countdown() {
+            var countdownDate = localStorage.getItem("countdownDate");
+
+            if (!countdownDate) {
+                countdownDate = new Date("2023-04-01T23:59:59").getTime();
+                localStorage.setItem("countdownDate", countdownDate);
+            } else {
+                countdownDate = parseInt(countdownDate);
+            }
+
+            var now = new Date().getTime();
+            var distance = countdownDate - now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("countdown").innerHTML = days + "j " + hours + "h " + minutes + "m " + seconds + "s ";
+
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "Terminé";
+                // Réinitialiser la date de fin du compte à rebours à la date actuelle plus 1 minute
+                countdownDate = new Date().getTime() + (1 * 60 * 1000);
+                localStorage.setItem("countdownDate", countdownDate);
+            }
+        }
+
+        var x = setInterval(countdown, 1000);
+    </script>
+
+    <!-- Compteur Smash -->
+
+    <script>
+
+        function countdown2() {
+            var countdownDate = localStorage.getItem("countdownDate2");
+            if (!countdownDate) {
+                countdownDate = new Date("2023-05-01T23:59:59").getTime();
+                localStorage.setItem("countdownDate2", countdownDate);
+            } else {
+                countdownDate = parseInt(countdownDate);
+            }
+            var now = new Date().getTime();
+            var distance = countdownDate - now;
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            document.getElementById("countdown2").innerHTML = days + "j " + hours + "h " + minutes + "m " + seconds + "s ";
+            if (distance < 0) {
+                clearInterval(x2);
+                document.getElementById("countdown2").innerHTML = "Terminé";
+                countdownDate = new Date().getTime() + (1 * 60 * 1000);
+                localStorage.setItem("countdownDate2", countdownDate);
+            }
+        }
+
+        var x2 = setInterval(countdown2, 1000);
+
+
+
+    </script>
 
 </body>
 

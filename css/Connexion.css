@@ -1,0 +1,7 @@
+:root{
+    --ColorHr: #ffffff;
+}
+
+.Separation{
+    border-top: 3px solid var(--ColorHr);
+}

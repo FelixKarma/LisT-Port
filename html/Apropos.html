@@ -16,6 +16,7 @@
 
 <body>
 
+    <!-- haut de page -->
     <header class="header">
 
         <div>
@@ -37,6 +38,7 @@
                 </div>
             </div>
 
+            <!--Ici serons les redirection pour le profils etc (subject to change) nous en discuterons-->
             <div class="codeco">
                 <label class="switch" id="placement">
                     <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -60,16 +62,22 @@
 
         </div>
 
+        <!--Ici nous mettrons dans les prochains jours, les redirection vers toute les pages
+        aucune utilité pour l'instant d'y toucher, nous verrons une fois toute les pages principal terminé-->
         <nav class="nav">
             <div class="jeuxlive">
                 <li>
                     <a href="#"><button class="nav1">Jeux</button></a>
                     <div class="deroulant">
                         <ul class="contenu">
-                            <a href="../html/accueilapex.html"><button class="contenuOption">Apex Legends</button></a>
-                            <a href="../html/AccueilLoL.html"><button class="contenuOption">League Of
+                            <a href="../html/accueilapex.html"><button class="contenuOption"><img id="LogoApex" alt=""
+                                        height="30px">Apex
                                     Legends</button></a>
-                            <a href="../html/accueil smash.html"><button class="contenuOption">Smash Bros
+                            <a href="../html/AccueilLoL.html"><button class="contenuOption"><img id="LogoLol" alt=""
+                                        height="30px">League Of
+                                    Legends</button></a>
+                            <a href="../html/accueil smash.html"><button class="contenuOption"><img id="LogoSmash"
+                                        alt="" height="30px">Smash Bros
                                     Ultimate</button></a>
                         </ul>
                     </div>
@@ -90,12 +98,45 @@
 
     </header>
 
+    <main class="main">
 
-    <main>
+        <br><br><br>
+
+        <section>
+
+            <article class="Module">
+
+                <form method="get" action="#">
+
+                    <br>
+                    <div class="centre">
+                        <h1>A propos :</h1>
+
+                        <p>LisT'Port est un site qui répertorie les différentes compétitions, actus et résultats e-sport
+                            mondiale.</p>
+                        <p>Le site a été entièrement développé et conçu lors de la Nurserie Numérique en mars 2023.</p>
+                        <br> <br>
+
+                        <h1>Crédits :</h1>
+                        <p>Alexandra Moret</p>
+                        <p>Steven Gens</p>
+                        <p>Dimitri Rivière</p>
+                        <p>Mickael Guevel</p>
+
+                    </div>
+                    <br>
+
+
+                </form>
+
+            </article>
+        </section>
+        
+    <br><br><br>
 
     </main>
 
-
+    <!-- bas de page -->
     <footer class="footer">
 
         <div class="network">
@@ -120,12 +161,13 @@
 
     </footer>
 
-    <script src="../js/LightDarkMode.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="../js/NavBar.js"></script>
+    <script src="../js/LightDarkMode.js"></script> <!--Ce js contient la fonction Light/Dark Mode-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> <!-- JS JQUERY -->
+    <script src="../js/NavBar.js"></script> <!-- JS NAVBAR -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> <!--Ce js contient BootStrap-->
+
 
 </body>
 

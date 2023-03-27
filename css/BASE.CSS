@@ -250,7 +250,7 @@ p :not(.footer) {
     background-image: var(--bgNav);
     border: 2px solid var(--borderNav);
     box-shadow: 5px 5px 8px var(--boxShadowNav);
-    font-size: 35px;
+    font-size: 30px;
     margin-left: 20px;
     margin-right: 20px;
     font-family: 'Jockey-One';

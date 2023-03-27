@@ -1,223 +1,24 @@
-/*Partie concernant la police utiliser sur toute la page
-vous pouvez tjs sur les pages CSS non commune changer les 
-propriété de la police pour tel ou tel partie de la page
-en fonction des besoins; les deux plus utiles sont
-font-weight : pour l'épaisseur
-font-size : pour la taille*/
-
-
-@font-face {
-    font-family: 'Jockey-One';
-    src: url(../police/JockeyOne-Regular.ttf)
-}
-
-body {
-    font-family: 'Jockey-One', sans-serif;
-    background-color: rgb(2, 2, 2);
-    margin: 0px;
-}
-
-/*Partie commune footer et header*/
-
-* :not(button , .nav1){
-    color: #909090;
-}
-
-.header , .footer{
-    background-color: #1B1B1B;
-}
-
-.header {
-    border-bottom: 2px solid #909090;
-    padding-bottom: 10px;
-}
-
-.footer {
-    position: fixed;
-    bottom: 0 ;
-    width: 100%;
-    border-top: 2px solid #909090;
-    height: 15%;
-    
-}
-
-.text-deco{
-    text-decoration: none;
-    font-size: 110%;
-}
-
-
-/*Partie concernant le Header*/
-
-p :not(.footer){
-    width: 75%;
-    margin: auto;
-}
-
-.logo{
-    margin-top: 0.8%;
-}
-
-.codeco {
-    display: flex;
-    position: absolute;
-    right: 1%;
-    top: 1%;
-}
-
-.lightDarkMode {
-    display: flex;
-    position: absolute;
-    right: 13.4%;
-    top: 1.3%;
-}
-
-#co{
-    color: #1B1B1B;
-    background-color: #001ca8;
-    border: none;
-    border-radius: 30px;
-    margin: 1%;
-    padding: 6px 12px;
-    font-size: 150%;
-    font-weight: bold;
-    border: 1px solid #000000;
-    box-shadow: 5px 5px 8px #000000;
-    transition: all 0.3s ease;
-    width: 160px;
-    font-family: 'Jockey-One';
-}
-
-#co:hover{
-    background-color: #0023cf ;
-    color: #999999;
-    transform: scale(1.1);
-}
-
-#deco{
-    color: #1B1B1B;
-    background-color: #880000;
-    border: none;
-    border-radius: 30px;
-    margin: 1%;
-    margin-left: 10%;
-    padding: 6px 12px;
-    font-size: 150%;
-    font-weight: bold;
-    border: 1px solid #000000;
-    box-shadow: 5px 5px 8px #000000;
-    transition: all 0.3s ease;
-    width: 160px;
-    font-family: 'Jockey-One';
-}
-
-#deco:hover{
-    background-color: #a50000 ;
-    color: #999999;
-    transform: scale(1.1);
-}
-
-.sponsors{
-    position: absolute;
-    left: 20px;
-}
-
-.sponsorplace {
-    display: flex;
-}
-
-.nav{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 3px;
-}
-
-.nav1 {
-    text-decoration: none;
-    color: #880000;
-    background-color: #070707;
-    border: 2px solid #000000;
-    box-shadow: 5px 5px 8px #000000;
-    font-size: 35px;
-    margin-left: 20px;
-    margin-right: 20px;
-    font-family: 'Jockey-One';
-    width: 300px;
-    transition: all 0.3s ease;
-}
-
-.nav1:hover {
-    cursor: pointer;
-    background-color: #0e0e0e;
-    border: 2px solid #020202;
-    transform: scale(1.1);
-}
-
-.jeuxlive , .forumpropos {
-    display: flex;
-    align-items: flex-end;
-}
-
-.jeuxlive{
-    margin-right: 5%;
-}
-
-.forumpropos{
-    margin-left: 5%;
-}
-
-
-
-/*Partie concernant le main
-normalement aucune modification est nécéssaire*/
-
-.main{
-    text-align: center;
-    width: 70%;
-    margin: auto;
-    font-size: 25px;
-}
-
-
-
-/*Partie concernant le footer*/
-
-.network{
-    margin-left: 20px;
-    padding-top: 5px;
-    padding-bottom: 20px;
-    font-size: large;
-    display: flex;
-    justify-content: space-between;
-}
-
-.langue{
-    margin-right: 2%;
-    margin-top: 2%;
-}
-
-.botlink {
-    text-align: center;
-    padding-bottom: 10px;
-}
-.intro{
-    display: flex;
-    justify-content: center;
-}
-.bolo{
-    display: flex;
-    justify-content: center;
-}
-.mario{
-    display: flex;
-    justify-content: center;
-}
-h1{
+.intro {
     display: flex;
     justify-content: center;
 }
 
-.ab{
+.bolo {
+    display: flex;
+    justify-content: center;
+}
+
+.mario {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.ab {
     display: flex;
     justify-content: flex-start;
 }
