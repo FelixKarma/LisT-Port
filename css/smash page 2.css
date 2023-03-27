@@ -1,15 +1,19 @@
 .intro{
     display: flex;
     justify-content: center;
+
 }
+
 .bolo{
     display: flex;
     justify-content: center;
 }
+
 .mario{
     display: flex;
     justify-content: center;
 }
+
 h1{
     display: flex;
     justify-content: center;
@@ -17,12 +21,13 @@ h1{
 
 .bolo {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .mario {
     display: flex;
     justify-content: center;
+    padding-bottom: 30px;
 }
 
 h1 {
@@ -33,4 +38,11 @@ h1 {
 .ab {
     display: flex;
     justify-content: flex-start;
+}
+
+.Title{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
