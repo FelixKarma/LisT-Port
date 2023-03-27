@@ -11,9 +11,53 @@ font-size : pour la taille*/
     src: url(../police/JockeyOne-Regular.ttf)
 }
 
+:root {
+    /* Dark Mode */
+
+    /* Général */
+
+    --ecriture: #909090;
+    --background: #000000;
+
+    /* Header + Footer */
+
+    --backgroundHF: radial-gradient(circle at center center, transparent, rgb(0, 0, 0)), repeating-linear-gradient(135deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 2px, transparent 2px, transparent 10px, rgb(0, 0, 0) 10px, rgb(0, 0, 0) 11px, transparent 11px, transparent 21px), repeating-linear-gradient(45deg, rgb(29, 29, 29) 0px, rgb(29, 29, 29) 4px, transparent 4px, transparent 8px), linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
+
+    /* main */
+
+    --module: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.05) 0px, rgba(255, 255, 255, 0.05) 1px, transparent 1px, transparent 11px, rgba(255, 255, 255, 0.05) 11px, rgba(255, 255, 255, 0.05) 12px, transparent 12px, transparent 32px), repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.05) 0px, rgba(255, 255, 255, 0.05) 1px, transparent 1px, transparent 11px, rgba(255, 255, 255, 0.05) 11px, rgba(255, 255, 255, 0.05) 12px, transparent 12px, transparent 32px), repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0px, rgba(255, 255, 255, 0.05) 1px, transparent 1px, transparent 11px, rgba(255, 255, 255, 0.05) 11px, rgba(255, 255, 255, 0.05) 12px, transparent 12px, transparent 32px), repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.05) 0px, rgba(255, 255, 255, 0.05) 1px, transparent 1px, transparent 11px, rgba(255, 255, 255, 0.05) 11px, rgba(255, 255, 255, 0.05) 12px, transparent 12px, transparent 32px), linear-gradient(90deg, rgb(0, 0, 0), rgb(20, 0, 0));
+
+    /* Variable Bouton Connexion */
+
+    --ecritureBtnCo: #999999;
+    --bgBtnCo: #001ca8;
+    --borderBtnCo: #000000;
+    --boxShadowBtnCo: #000000;
+    --bgBtnCoHover: #0023cf;
+    --ecritureBtnCoHover: #e2e2e2;
+
+    /* Variable Bouton Deconnexion */
+
+    --ecritureBtnDeco: #1B1B1B;
+    --bgBtnDeco: #880000;
+    --borderBtnDeco: #000000;
+    --boxShadowBtnDeco: #000000;
+    --bgBtnDecoHover: #a50000;
+    --ecritureBtnDecoHover: #999999;
+
+    /* Navigation */
+
+    --ecritureNav: #880000;
+    --bgNav: radial-gradient(circle at center center, rgb(7, 7, 7), rgb(7, 7, 7));
+    --borderNav: #000000;
+    --boxShadowNav: #000000;
+    --bgNavHover: radial-gradient(circle at center center, rgb(14, 14, 14), rgb(14, 14, 14));
+    --borderNavHover: #020202;
+}
+
 body {
     font-family: 'Jockey-One', sans-serif;
-    background-color: rgb(2, 2, 2);
+    background-image: var(--background);
     margin: 0px;
 }
 
@@ -23,27 +67,27 @@ main{
 
 /*Partie commune footer et header*/
 
-* :not(button , .nav1){
-    color: #909090;
+* :not(button, .nav1) {
+    color: var(--ecriture);
 }
 
-.header , .footer{
-    background-color: #1B1B1B;
+.header,
+.footer {
+    background-image: var(--backgroundHF);
 }
 
 .header {
-    border-bottom: 2px solid #909090;
+    border-bottom: 2px solid var(--borderHF);
     padding-bottom: 10px;
 }
 
 .footer {
-    position: fixed;
-    bottom: 0 ;
+    bottom: 0;
     width: 100%;
-    border-top: 2px solid #909090;
+    border-top: 2px solid var(--borderHF);
 }
 
-.text-deco{
+.text-deco {
     text-decoration: none;
     font-size: 110%;
 }
@@ -51,12 +95,12 @@ main{
 
 /*Partie concernant le Header*/
 
-p :not(.footer){
+p :not(.footer) {
     width: 75%;
     margin: auto;
 }
 
-.logo{
+.logo {
     margin-top: 0.8%;
 }
 
@@ -74,31 +118,31 @@ p :not(.footer){
     top: 1.3%;
 }
 
-#co{
-    color: #1B1B1B;
-    background-color: #001ca8;
+#co {
+    color: var(--ecritureBtnCo);
+    background-color: var(--bgBtnCo);
     border: none;
     border-radius: 30px;
     margin: 1%;
     padding: 6px 12px;
     font-size: 150%;
     font-weight: bold;
-    border: 1px solid #000000;
-    box-shadow: 5px 5px 8px #000000;
+    border: 1px solid var(--borderBtnCo);
+    box-shadow: 5px 5px 8px var(--boxShadowBtnCo);
     transition: all 0.3s ease;
     width: 160px;
     font-family: 'Jockey-One';
 }
 
-#co:hover{
-    background-color: #0023cf ;
-    color: #999999;
+#co:hover {
+    background-color: var(--bgBtnCoHover);
+    color: var(--ecritureBtnCoHover);
     transform: scale(1.1);
 }
 
-#deco{
-    color: #1B1B1B;
-    background-color: #880000;
+#deco {
+    color: var(--ecritureBtnDeco);
+    background-color: var(--bgBtnDeco);
     border: none;
     border-radius: 30px;
     margin: 1%;
@@ -106,20 +150,20 @@ p :not(.footer){
     padding: 6px 12px;
     font-size: 150%;
     font-weight: bold;
-    border: 1px solid #000000;
-    box-shadow: 5px 5px 8px #000000;
+    border: 1px solid var(--borderBtnDeco);
+    box-shadow: 5px 5px 8px var(--boxShadowBtnDeco);
     transition: all 0.3s ease;
     width: 160px;
     font-family: 'Jockey-One';
 }
 
-#deco:hover{
-    background-color: #a50000 ;
-    color: #999999;
+#deco:hover {
+    background-color: var(--bgBtnDecoHover);
+    color: var(--ecritureBtnDecoHover);
     transform: scale(1.1);
 }
 
-.sponsors{
+.sponsors {
     position: absolute;
     left: 20px;
 }
@@ -128,7 +172,7 @@ p :not(.footer){
     display: flex;
 }
 
-.nav{
+.nav {
     display: flex;
     justify-content: center;
     padding-bottom: 3px;
@@ -136,10 +180,24 @@ p :not(.footer){
 
 .nav1 {
     text-decoration: none;
-    color: #880000;
-    background-color: #070707;
-    border: 2px solid #000000;
-    box-shadow: 5px 5px 8px #000000;
+    color: var(--ecritureNav);
+    background-image: var(--bgNav);
+    border: 2px solid var(--borderNav);
+    box-shadow: 5px 5px 8px var(--boxShadowNav);
+    font-size: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: 'Jockey-One';
+    width: 300px;
+    transition: all 0.3s ease;
+}
+
+.nav2 {
+    text-decoration: none;
+    color: var(--ecritureNav);
+    background-image: var(--bgNav);
+    border: 2px solid var(--borderNav);
+    box-shadow: 5px 5px 8px var(--boxShadowNav);
     font-size: 35px;
     margin-left: 20px;
     margin-right: 20px;
@@ -150,41 +208,89 @@ p :not(.footer){
 
 .nav1:hover {
     cursor: pointer;
-    background-color: #0e0e0e;
-    border: 2px solid #020202;
+    background-image: var(--bgNavHover);
+    border: 2px solid var(--borderNavHover);
     transform: scale(1.1);
 }
 
-.jeuxlive , .forumpropos {
+.nav2:hover {
+    cursor: pointer;
+    background-image: var(--bgNavHover);
+    border: 2px solid var(--borderNavHover);
+    transform: scale(1.1);
+}
+
+.jeuxlive,
+.forumpropos {
     display: flex;
     align-items: flex-end;
 }
 
-.jeuxlive{
+.jeuxlive {
     margin-right: 5%;
 }
 
-.forumpropos{
+.forumpropos {
     margin-left: 5%;
 }
 
+.deroulant {
+    display: none;
+}
+
+.contenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 999;
+    text-decoration: none;
+    margin-top: 3px;
+    transform: translateX(-8.5%);
+}
+
+.contenuOption {
+    text-decoration: none;
+    color: var(--ecritureNav);
+    background-image: var(--bgNav);
+    border: 2px solid var(--borderNav);
+    box-shadow: 5px 5px 8px var(--boxShadowNav);
+    font-size: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: 'Jockey-One';
+    width: 300px;
+    transition: all 0.3s ease;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+.contenuOption:hover {
+    cursor: pointer;
+    background-image: var(--bgNavHover);
+    border: 2px solid var(--borderNavHover);
+    transform: scale(1.1);
+}
 
 
 /*Partie concernant le main
 normalement aucune modification est nécéssaire*/
 
-.main{
+.main {
     text-align: center;
     width: 70%;
     margin: auto;
     font-size: 25px;
 }
 
+.Module {
+    background-image: var(--module);
+    margin: 10px;
+}
 
 
 /*Partie concernant le footer*/
 
-.network{
+.network {
     margin-left: 20px;
     padding-top: 5px;
     padding-bottom: 20px;
@@ -193,7 +299,7 @@ normalement aucune modification est nécéssaire*/
     justify-content: space-between;
 }
 
-.langue{
+.langue {
     margin-right: 2%;
     margin-top: 2%;
 }

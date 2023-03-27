@@ -1,0 +1,42 @@
+.mainLive {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#LogoLiveLol {
+height: 500px;
+}
+
+.ModuleLol{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#LogoLiveApex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ModuleApex{
+    margin: 50px;
+}
+
+.CompteurApex {
+    font-size: 150px;
+}
+
+#LogoLiveSmash {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ModuleSmash{
+    margin: 50px;
+}
+
+.CompteurSmash {
+    font-size: 150px;
+}

@@ -1,0 +1,91 @@
+.flotte {
+  float: right;
+}
+
+p {
+  text-align: justify;
+  font-size: 20px;
+}
+
+#img {
+  display: flex;
+  justify-content: space-around;
+}
+
+.article1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.article2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.article3 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.description1 {
+    font-size: 20px
+}
+
+.description2 {
+  margin-left: 40px;
+}
+
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 1000px;
+  width: 1000px;
+}
+
+.Video{
+display: flex;
+justify-content: center ;
+}
+
+.TitreDouble{
+display: flex;
+justify-content: space-around;
+}
+
+.VideoDouble{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.video-responsive iframe{
+  left: 0;
+  top: 0;
+  height: 800px;
+  width: 800px;
+}
+
+.videoalign {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  margin-left: 20px;
+}
+
+
+.centrage {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+
+
+.center {
+  margin-left: 550px;
+}

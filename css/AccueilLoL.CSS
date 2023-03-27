@@ -2,28 +2,21 @@ h1 {
     text-align: center;
 }
 
-.navLoL{
+.navLoL ,.CentrerB{
     display: flex;
-    justify-content: space-between;
-    margin-right: 5%;
+    justify-content: space-evenly;
 }
 
 .actuligue{
     margin-top: 10%;
 }
 
-.CentrerB{
-    display: flex;
-    justify-content: space-between;
-}
-
 .imglol{
     margin-left: 10%;
 }
 .texteD{
-    margin-right: 10%;
-    margin-left: 10%;
     margin-top: 10%;
+    margin-left: 5%;
 }
 
 .imgD {
@@ -33,7 +26,47 @@ h1 {
 .menuG{
     margin-left: 5%;
     padding-top: 10%;
-    background-color: rgb(27, 27, 27);
-    height: 860px;
-    width: 350px;
+    min-width: 25%;
+    min-height: 800px;
+}
+
+.triste{
+    font-size: 400%;
+}
+
+table, th, tr{
+    border: solid 1px black;
+    min-width: 450px;
+    text-align: center;
+    font-size: 20px;
+}
+
+td {
+    border: solid 1px black;
+}
+
+.list-group{
+    position : sticky;
+    top: 50px;
+    bottom: 50px;
+}
+ li{
+    width: 50% ;
+ }
+ section{
+    max-width: 70%;
+    margin-left: 15%;
+ }
+
+ .main {
+    width: 100% !important;
+}
+
+#sidenav{
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.list-group-item{
+    background-color: #533d77;
 }
