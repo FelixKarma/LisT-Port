@@ -12,17 +12,14 @@
   opacity: 50%;
 }
 
-#placement {
-  margin-top: 10px;
-  margin-right: 11px
-}
-
 .switch {
   font-size: 17px;
   position: relative;
   display: inline-block;
   width: 64px;
   height: 34px;
+  top: 1px;
+  margin-right: 10px;
 }
 
 .switch input {

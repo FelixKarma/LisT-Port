@@ -1,4 +1,4 @@
-p {
+p:not(.text-deco) {
     text-align: center;
     font-size: 20px;
 }

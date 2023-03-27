@@ -29,28 +29,11 @@ switchTheme.addEventListener('click', () => {
 
         document.documentElement.style.setProperty('--backgroundHF', 'radial-gradient(circle at center center, transparent,rgb(0,0,0)),repeating-linear-gradient(135deg, rgb(0,0,0) 0px, rgb(0,0,0) 2px,transparent 2px, transparent 10px,rgb(0,0,0) 10px, rgb(0,0,0) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgb(29,29,29) 0px, rgb(29,29,29) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0))');
         document.documentElement.style.setProperty('--borderHF', '#909090');
+        document.documentElement.style.setProperty('--logoProfil', '#880000');
 
         /* main */
 
         document.documentElement.style.setProperty('--module', 'repeating-linear-gradient(45deg, rgba(255,255,255, 0.05) 0px, rgba(255,255,255, 0.05) 1px,transparent 1px, transparent 11px,rgba(255,255,255, 0.05) 11px, rgba(255,255,255, 0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(0deg, rgba(255,255,255, 0.05) 0px, rgba(255,255,255, 0.05) 1px,transparent 1px, transparent 11px,rgba(255,255,255, 0.05) 11px, rgba(255,255,255, 0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(135deg, rgba(255,255,255, 0.05) 0px, rgba(255,255,255, 0.05) 1px,transparent 1px, transparent 11px,rgba(255,255,255, 0.05) 11px, rgba(255,255,255, 0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(90deg, rgba(255,255,255, 0.05) 0px, rgba(255,255,255, 0.05) 1px,transparent 1px, transparent 11px,rgba(255,255,255, 0.05) 11px, rgba(255,255,255, 0.05) 12px,transparent 12px, transparent 32px),linear-gradient(90deg, rgb(0,0,0),rgb(20,0,0))');
-
-        /* Variable Bouton Connexion */
-
-        document.documentElement.style.setProperty('--ecritureBtnCo', '#999999');
-        document.documentElement.style.setProperty('--bgBtnCo', '#001ca8');
-        document.documentElement.style.setProperty('--borderBtnCo', '#000000');
-        document.documentElement.style.setProperty('--boxShadowBtnCo', '#000000');
-        document.documentElement.style.setProperty('--bgBtnCoHover', '#0023cf');
-        document.documentElement.style.setProperty('--ecritureBtnCoHover', '#e2e2e2');
-
-        /* Variable Bouton Deconnexion */
-
-        document.documentElement.style.setProperty('--ecritureBtnDeco', '#1B1B1B');
-        document.documentElement.style.setProperty('--bgBtnDeco', '#880000');
-        document.documentElement.style.setProperty('--borderBtnDeco', '#000000');
-        document.documentElement.style.setProperty('--boxShadowBtnDeco', '#000000');
-        document.documentElement.style.setProperty('--bgBtnDecoHover', '#a50000')
-        document.documentElement.style.setProperty('--ecritureBtnDecoHover', '#999999');
 
         /* Navigation */
 
@@ -96,28 +79,11 @@ switchTheme.addEventListener('click', () => {
 
         document.documentElement.style.setProperty('--backgroundHF', 'repeating-linear-gradient(90deg, hsla(253,0%,98%,0.03) 0px, hsla(253,0%,98%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(112.5deg, hsla(253,0%,98%,0.03) 0px, hsla(253,0%,98%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(22.5deg, hsla(253,0%,98%,0.03) 0px, hsla(253,0%,98%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(67.5deg, hsla(253,0%,98%,0.03) 0px, hsla(253,0%,98%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(90deg, hsla(253,0%,98%,0.03) 0px, hsla(253,0%,98%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(157.5deg, hsla(253,0%,98%,0.03) 0px, hsla(253,0%,98%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(112.5deg, hsla(253,0%,98%,0.03) 0px, hsla(253,0%,98%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(135deg, hsla(253,0%,98%,0.03) 0px, hsla(253,0%,98%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(135deg, hsla(253,0%,98%,0.03) 0px, hsla(253,0%,98%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(180deg, hsla(253,0%,98%,0.03) 0px, hsla(253,0%,98%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(67.5deg, hsla(253,0%,98%,0.03) 0px, hsla(253,0%,98%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(180deg, hsla(253,0%,98%,0.03) 0px, hsla(253,0%,98%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(135deg, hsla(253,0%,98%,0.03) 0px, hsla(253,0%,98%,0.03) 1px,transparent 1px, transparent 12px),linear-gradient(135deg, rgb(182,121,255),rgb(218,46,46))');
         document.documentElement.style.setProperty('--borderHF', '#000000');
+        document.documentElement.style.setProperty('--logoProfil', '#000000');
 
         /* main */
 
         document.documentElement.style.setProperty('--module', 'repeating-linear-gradient(90deg, rgba(255,255,255, 0.05) 0px, rgba(255,255,255, 0.05) 1px,transparent 1px, transparent 11px,rgba(255,255,255, 0.05) 11px, rgba(255,255,255, 0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(45deg, rgba(255,255,255, 0.05) 0px, rgba(255,255,255, 0.05) 1px,transparent 1px, transparent 11px,rgba(255,255,255, 0.05) 11px, rgba(255,255,255, 0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(180deg, rgba(255,255,255, 0.05) 0px, rgba(255,255,255, 0.05) 1px,transparent 1px, transparent 11px,rgba(255,255,255, 0.05) 11px, rgba(255,255,255, 0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(135deg, rgba(255,255,255, 0.05) 0px, rgba(255,255,255, 0.05) 1px,transparent 1px, transparent 11px,rgba(255,255,255, 0.05) 11px, rgba(255,255,255, 0.05) 12px,transparent 12px, transparent 32px),linear-gradient(135deg, rgb(182,121,255),rgb(218,46,46))');
-
-        /* Variable Bouton Connexion */
-
-        document.documentElement.style.setProperty('--ecritureBtnCo', '#9f9f9f');
-        document.documentElement.style.setProperty('--bgBtnCo', '#a544e8');
-        document.documentElement.style.setProperty('--borderBtnCo', '#000000');
-        document.documentElement.style.setProperty('--boxShadowBtnCo', '#000000');
-        document.documentElement.style.setProperty('--bgBtnCoHover', '#c150e9');
-        document.documentElement.style.setProperty('--ecritureBtnCoHover', '#e2e2e2');
-
-        /* Variable Bouton Deconnexion */
-
-        document.documentElement.style.setProperty('--ecritureBtnDeco', '#1B1B1B');
-        document.documentElement.style.setProperty('--bgBtnDeco', '#880000');
-        document.documentElement.style.setProperty('--borderBtnDeco', '#000000');
-        document.documentElement.style.setProperty('--boxShadowBtnDeco', '#000000');
-        document.documentElement.style.setProperty('--bgBtnDecoHover', '#a50000')
-        document.documentElement.style.setProperty('--ecritureBtnDecoHover', '#999999');
 
         /* Navigation */
 
@@ -165,28 +131,11 @@ if (lightMode == "enabled") {
 
     document.documentElement.style.setProperty('--backgroundHF', 'radial-gradient(circle at center center, transparent,rgb(0,0,0)),repeating-linear-gradient(135deg, rgb(0,0,0) 0px, rgb(0,0,0) 2px,transparent 2px, transparent 10px,rgb(0,0,0) 10px, rgb(0,0,0) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgb(29,29,29) 0px, rgb(29,29,29) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0))');
     document.documentElement.style.setProperty('--borderHF', '#909090');
+    document.documentElement.style.setProperty('--logoProfil', '#880000');
 
     /* main */
 
     document.documentElement.style.setProperty('--module', 'repeating-linear-gradient(45deg, rgba(255,255,255, 0.05) 0px, rgba(255,255,255, 0.05) 1px,transparent 1px, transparent 11px,rgba(255,255,255, 0.05) 11px, rgba(255,255,255, 0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(0deg, rgba(255,255,255, 0.05) 0px, rgba(255,255,255, 0.05) 1px,transparent 1px, transparent 11px,rgba(255,255,255, 0.05) 11px, rgba(255,255,255, 0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(135deg, rgba(255,255,255, 0.05) 0px, rgba(255,255,255, 0.05) 1px,transparent 1px, transparent 11px,rgba(255,255,255, 0.05) 11px, rgba(255,255,255, 0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(90deg, rgba(255,255,255, 0.05) 0px, rgba(255,255,255, 0.05) 1px,transparent 1px, transparent 11px,rgba(255,255,255, 0.05) 11px, rgba(255,255,255, 0.05) 12px,transparent 12px, transparent 32px),linear-gradient(90deg, rgb(0,0,0),rgb(20,0,0))');
-
-    /* Variable Bouton Connexion */
-
-    document.documentElement.style.setProperty('--ecritureBtnCo', '#999999');
-    document.documentElement.style.setProperty('--bgBtnCo', '#001ca8');
-    document.documentElement.style.setProperty('--borderBtnCo', '#000000');
-    document.documentElement.style.setProperty('--boxShadowBtnCo', '#000000');
-    document.documentElement.style.setProperty('--bgBtnCoHover', '#0023cf');
-    document.documentElement.style.setProperty('--ecritureBtnCoHover', '#e2e2e2');
-
-    /* Variable Bouton Deconnexion */
-
-    document.documentElement.style.setProperty('--ecritureBtnDeco', '#1B1B1B');
-    document.documentElement.style.setProperty('--bgBtnDeco', '#880000');
-    document.documentElement.style.setProperty('--borderBtnDeco', '#000000');
-    document.documentElement.style.setProperty('--boxShadowBtnDeco', '#000000');
-    document.documentElement.style.setProperty('--bgBtnDecoHover', '#a50000')
-    document.documentElement.style.setProperty('--ecritureBtnDecoHover', '#999999');
 
     /* Navigation */
 
@@ -230,28 +179,11 @@ if (lightMode == "enabled") {
 
     document.documentElement.style.setProperty('--backgroundHF', 'repeating-linear-gradient(90deg, hsla(253,0%,98%,0.03) 0px, hsla(253,0%,98%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(112.5deg, hsla(253,0%,98%,0.03) 0px, hsla(253,0%,98%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(22.5deg, hsla(253,0%,98%,0.03) 0px, hsla(253,0%,98%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(67.5deg, hsla(253,0%,98%,0.03) 0px, hsla(253,0%,98%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(90deg, hsla(253,0%,98%,0.03) 0px, hsla(253,0%,98%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(157.5deg, hsla(253,0%,98%,0.03) 0px, hsla(253,0%,98%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(112.5deg, hsla(253,0%,98%,0.03) 0px, hsla(253,0%,98%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(135deg, hsla(253,0%,98%,0.03) 0px, hsla(253,0%,98%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(135deg, hsla(253,0%,98%,0.03) 0px, hsla(253,0%,98%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(180deg, hsla(253,0%,98%,0.03) 0px, hsla(253,0%,98%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(67.5deg, hsla(253,0%,98%,0.03) 0px, hsla(253,0%,98%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(180deg, hsla(253,0%,98%,0.03) 0px, hsla(253,0%,98%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(135deg, hsla(253,0%,98%,0.03) 0px, hsla(253,0%,98%,0.03) 1px,transparent 1px, transparent 12px),linear-gradient(135deg, rgb(182,121,255),rgb(218,46,46))');
     document.documentElement.style.setProperty('--borderHF', '#000000');
+    document.documentElement.style.setProperty('--logoProfil', '#000000');
 
     /* main */
 
     document.documentElement.style.setProperty('--module', 'repeating-linear-gradient(90deg, rgba(255,255,255, 0.05) 0px, rgba(255,255,255, 0.05) 1px,transparent 1px, transparent 11px,rgba(255,255,255, 0.05) 11px, rgba(255,255,255, 0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(45deg, rgba(255,255,255, 0.05) 0px, rgba(255,255,255, 0.05) 1px,transparent 1px, transparent 11px,rgba(255,255,255, 0.05) 11px, rgba(255,255,255, 0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(180deg, rgba(255,255,255, 0.05) 0px, rgba(255,255,255, 0.05) 1px,transparent 1px, transparent 11px,rgba(255,255,255, 0.05) 11px, rgba(255,255,255, 0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(135deg, rgba(255,255,255, 0.05) 0px, rgba(255,255,255, 0.05) 1px,transparent 1px, transparent 11px,rgba(255,255,255, 0.05) 11px, rgba(255,255,255, 0.05) 12px,transparent 12px, transparent 32px),linear-gradient(135deg, rgb(182,121,255),rgb(218,46,46))');
-
-    /* Variable Bouton Connexion */
-
-    document.documentElement.style.setProperty('--ecritureBtnCo', '#9f9f9f');
-    document.documentElement.style.setProperty('--bgBtnCo', '#a544e8');
-    document.documentElement.style.setProperty('--borderBtnCo', '#000000');
-    document.documentElement.style.setProperty('--boxShadowBtnCo', '#000000');
-    document.documentElement.style.setProperty('--bgBtnCoHover', '#c150e9');
-    document.documentElement.style.setProperty('--ecritureBtnCoHover', '#e2e2e2');
-
-    /* Variable Bouton Deconnexion */
-
-    document.documentElement.style.setProperty('--ecritureBtnDeco', '#1B1B1B');
-    document.documentElement.style.setProperty('--bgBtnDeco', '#880000');
-    document.documentElement.style.setProperty('--borderBtnDeco', '#000000');
-    document.documentElement.style.setProperty('--boxShadowBtnDeco', '#000000');
-    document.documentElement.style.setProperty('--bgBtnDecoHover', '#a50000')
-    document.documentElement.style.setProperty('--ecritureBtnDecoHover', '#999999');
 
     /* Navigation */
 
