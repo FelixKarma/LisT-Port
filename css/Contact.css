@@ -7,7 +7,7 @@ p{
     text-decoration: none;
     cursor: default;
 }
-a:hover{
+.logo:hover{
     transition: transform 60s ease-in-out;
     transform: rotate(99999deg);
 }
@@ -17,4 +17,12 @@ transform: rotateY(0.5turn);
 transition: 5s;
 }
 
+.delete{
+    display: none;
+}
+
+.Center{
+    display: flex;
+    justify-content: center;
+}
 

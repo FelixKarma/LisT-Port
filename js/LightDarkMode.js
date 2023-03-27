@@ -1,7 +1,9 @@
+let LogoListPort = document.getElementById('logo-marg');
 let LogoApex = document.getElementById('LogoApex');
 let LogoLol = document.getElementById('LogoLol');
 let LogoSmash = document.getElementById('LogoSmash');
 
+let srcListPort = LogoApex.getAttribute('src');
 let srcApex = LogoApex.getAttribute('src');
 let srcLol = LogoLol.getAttribute('src');
 let srcSmash = LogoSmash.getAttribute('src');
@@ -58,9 +60,11 @@ switchTheme.addEventListener('click', () => {
 
         localStorage.removeItem("dark-mode");
         localStorage.setItem("dark-mode", "enabled");
+        LogoListPort.removeAttribute('src');
         LogoApex.removeAttribute('src');
         LogoLol.removeAttribute('src');
         LogoSmash.removeAttribute('src');
+        LogoListPort.setAttribute('src', '../images/Logo_LisTPort_Blanc.png');
         LogoApex.setAttribute('src', '../images/Logo Apex Blanc.png');
         LogoLol.setAttribute('src', '../images/Logo LOL Blanc.png');
         LogoSmash.setAttribute('src', '../images/Logo Smash Blanc.png');
@@ -107,11 +111,12 @@ switchTheme.addEventListener('click', () => {
         // Local storage
 
         localStorage.removeItem("dark-mode");
-
         localStorage.setItem("dark-mode", "disable");
+        LogoListPort.removeAttribute('src');
         LogoApex.removeAttribute('src');
         LogoLol.removeAttribute('src');
         LogoSmash.removeAttribute('src');
+        LogoListPort.setAttribute('src', '../images/Logo_LisTPort.png');
         LogoApex.setAttribute('src', '../images/Logo Apex Noir.png');
         LogoLol.setAttribute('src', '../images/Logo LOL Noir.png');
         LogoSmash.setAttribute('src', '../images/Logo Smash Noir.png');
@@ -159,9 +164,11 @@ if (lightMode == "enabled") {
     // Switch Theme
 
     switchTheme.setAttribute("checked", "true");
+    LogoListPort.removeAttribute('src');
     LogoApex.removeAttribute('src');
     LogoLol.removeAttribute('src');
     LogoSmash.removeAttribute('src');
+    LogoListPort.setAttribute('src', '../images/Logo_LisTPort_Blanc.png');
     LogoApex.setAttribute('src', '../images/Logo Apex Blanc.png');
     LogoLol.setAttribute('src', '../images/Logo LOL Blanc.png');
     LogoSmash.setAttribute('src', '../images/Logo Smash Blanc.png')
@@ -207,9 +214,11 @@ if (lightMode == "enabled") {
     // Switch Theme
 
     switchTheme.removeAttribute("checked");
+    LogoListPort.removeAttribute('src');
     LogoApex.removeAttribute('src');
     LogoLol.removeAttribute('src');
     LogoSmash.removeAttribute('src');
+    LogoListPort.setAttribute('src', '../images/Logo_LisTPort.png');
     LogoApex.setAttribute('src', '../images/Logo Apex Noir.png');
     LogoLol.setAttribute('src', '../images/Logo LOL Noir.png');
     LogoSmash.setAttribute('src', '../images/Logo Smash Noir.png');
