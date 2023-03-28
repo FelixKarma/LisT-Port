@@ -85,7 +85,35 @@ h1 {
   align-items: center;
 }
 
-
 .center {
   margin-left: 550px;
+}
+
+.PlacementBtnApex{
+  padding-top: 20px;
+}
+
+.nav6 {
+  text-decoration: none;
+  color: var(--ecritureNav);
+  background-image: var(--bgNav);
+  border: 2px solid var(--borderNav);
+  box-shadow: 5px 5px 8px var(--boxShadowNav);
+  font-size: 35px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: 'Jockey-One';
+  width: 300px;
+  transition: all 0.3s ease;
+}
+
+.nav6:hover {
+  cursor: pointer;
+  background-image: var(--bgNavHover);
+  border: 2px solid var(--borderNavHover);
+  transform: scale(1.1);
+}
+
+.mozambique{
+  margin-left: 850px;
 }
