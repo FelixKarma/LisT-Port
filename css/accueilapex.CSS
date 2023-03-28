@@ -85,7 +85,6 @@ h1 {
   align-items: center;
 }
 
-
 .center {
   margin-left: 550px;
 }
@@ -113,4 +112,8 @@ h1 {
   background-image: var(--bgNavHover);
   border: 2px solid var(--borderNavHover);
   transform: scale(1.1);
+}
+
+.mozambique{
+  margin-left: 850px;
 }
