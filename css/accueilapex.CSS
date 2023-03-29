@@ -77,7 +77,6 @@ h1 {
   margin-left: 20px;
 }
 
-
 .centrage {
   display: flex;
   justify-content: space-around;
@@ -115,5 +114,6 @@ h1 {
 }
 
 .mozambique{
-  margin-left: 850px;
+display: flex;
+justify-content: center;
 }
